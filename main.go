@@ -7,7 +7,9 @@ func main() {
 	var opc1 int
 	var nav string
 	var contr string
-	for nav == "no" {
+	nav = "si"
+
+	for nav == "si" {
 
 		fmt.Println("Menú principal\n1-Cambiar su contraseña\n2-Editar perfil\n3-Foro\n4/Finalizar programa")
 		fmt.Scanf("%d", &opc1)
@@ -27,7 +29,7 @@ func main() {
 			var opc2 int
 			fmt.Println("Menú de Perfil\n1-Cambiar foto de perfil\n2-Cambiar nombre de usuario\n3-Editar biografía\n4-Volver al menú principal")
 			fmt.Println("Ingrese una opcion")
-			fmt.Scanf("%d", opc2)
+			fmt.Scanf("%d", &opc2)
 			switch opc2 {
 			case 1:
 				fmt.Println("Foto de perfil cambiada")
