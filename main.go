@@ -41,14 +41,14 @@ func main() {
 				fmt.Println("Biografia editada")
 				break
 			case 4:
-				fmt.Println("Volvera al menu principal")
-				break
+				fmt.Println("Volver al menu principal")
+
 			default:
 				fmt.Println("No se pudo detectar la opcion ingresada")
 			}
 		default:
 			fmt.Println("No se pudo detectar la opcion ingresada")
-
 		}
+		break
 	}
 }
