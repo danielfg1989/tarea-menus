@@ -43,6 +43,8 @@ func main() {
 			case 4:
 				fmt.Println("Volvera al menu principal")
 				break
+			default:
+				fmt.Println("No se pudo detectar la opcion ingresada")
 			}
 		default:
 			fmt.Println("No se pudo detectar la opcion ingresada")
