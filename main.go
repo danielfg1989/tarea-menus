@@ -33,19 +33,65 @@ func main() {
 			switch opc2 {
 			case 1:
 				fmt.Println("Foto de perfil cambiada")
-				break
+				fmt.Println("Desea seguir navegando, si o no?")
+				fmt.Scanf("%s", &nav)
+				if nav == "no" {
+					break
+				}
 			case 2:
 				fmt.Println("Nombre de Usuario cambiado")
-				break
+				fmt.Println("Desea seguir navegando, si o no?")
+				fmt.Scanf("%s", &nav)
+				if nav == "no" {
+					break
+				}
 			case 3:
 				fmt.Println("Biografia editada")
-				break
+				fmt.Println("Desea seguir navegando, si o no?")
+				fmt.Scanf("%s", &nav)
+				if nav == "no" {
+					break
+				}
 			case 4:
 				fmt.Println("Volver al menu principal")
-
+				break
 			default:
 				fmt.Println("No se pudo detectar la opcion ingresada")
 			}
+		case 3:
+			var opc3 int
+			fmt.Println("Menú de foro\n1-Publicar nueva entrada en el foro\n2-Editar una entrada del foro\n3-Eliminar una entrada del foro\n4-Volver al menú principal")
+			fmt.Println("Ingrese una opcion")
+			fmt.Scanf("%d", &opc3)
+			switch opc3 {
+			case 1:
+				fmt.Println("Nueva entrada publicada")
+				fmt.Println("Desea seguir navegando, si o no?")
+				fmt.Scanf("%s", &nav)
+				if nav == "no" {
+					break
+				}
+			case 2:
+				fmt.Println("Entrada editada con exito")
+				fmt.Println("Desea seguir navegando, si o no?")
+				fmt.Scanf("%s", &nav)
+				if nav == "no" {
+					break
+				}
+			case 3:
+				fmt.Println("Entrada eliminada")
+				fmt.Println("Desea seguir navegando, si o no?")
+				fmt.Scanf("%s", &nav)
+				if nav == "no" {
+					break
+				}
+			case 4:
+				fmt.Println("Volver al menu principal")
+				break
+			default:
+				fmt.Println("No se pudo detectar la opcion ingresada")
+			}
+
 		default:
 			fmt.Println("No se pudo detectar la opcion ingresada")
 		}
