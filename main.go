@@ -91,10 +91,10 @@ func main() {
 			default:
 				fmt.Println("No se pudo detectar la opcion ingresada")
 			}
-
+		case 4:
+			nav = "no"
 		default:
 			fmt.Println("No se pudo detectar la opcion ingresada")
 		}
-		break
 	}
 }
